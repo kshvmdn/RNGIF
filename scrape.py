@@ -3,12 +3,12 @@ import random
 from bs4 import BeautifulSoup
 
 def download_list(query):
+	url = "https://imgur.com/"
+	sort = {'query': ['score', 'relevance', 'time'], 'no_query': ['hot/time', 'top', 'hot/viral']}
 	if (query):
-		sort = ['score', 'relevance', 'time']
-		url = 'https://imgur.com/search/' + random.choice(sort) + '/all?q_type=anigif&q_all='+query
+		url += 'search/' + random.choice(sort['query']) + '/all?q_type=anigif&q_all=' + query
 	else:
-		sort = ['hot/time', 'top', 'hot/viral']
-		url = 'https://imgur.com/' + random.choice(sort)
+		url += random.choice(sort['no_query'])
 
 	html = requests.get(url).content
 	soup = BeautifulSoup(html, 'html.parser')
