@@ -10,5 +10,5 @@ Generate a URL for a random GIF from [Imgur](imgur.com), based on the (optional)
 
 #### Usage: 
 ```
-python3 main.py {optional_query}
+python3 main.py "optional_keywords"
 ```
