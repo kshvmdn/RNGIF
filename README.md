@@ -7,3 +7,8 @@ Generate a URL for a random GIF from [Imgur](imgur.com), based on the (optional)
 `pip3 install beautifulsoup4`
 + [Pyperclip](https://pypi.python.org/pypi/pyperclip)
 `pip3 install pyperclip`
+
+#### Usage: 
+```
+python3 main.py {optional_query}
+```
