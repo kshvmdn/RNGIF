@@ -13,4 +13,4 @@ url = 'https://i.imgur.com/' + gif_url[gif_url.find('/', 2) + 1:] + '.gif'
 # webbrowser.open_new_tab(url)
 
 pyperclip.copy(url)
-print("gif (%s) copied to clipboard!" % (url))
+print("GIF (%s) copied to clipboard!" % (url))

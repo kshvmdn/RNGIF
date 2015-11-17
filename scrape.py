@@ -7,7 +7,8 @@ def download_list(query):
 		sort = ['score', 'relevance', 'time']
 		url = 'https://imgur.com/search/' + random.choice(sort) + '/all?q_type=anigif&q_all='+query
 	else:
-		url = 'https://imgur.com/top'
+		sort = ['hot/time', 'top', 'hot/viral']
+		url = 'https://imgur.com/' + random.choice(sort)
 
 	html = requests.get(url).content
 	soup = BeautifulSoup(html, 'html.parser')
