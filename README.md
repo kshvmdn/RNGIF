@@ -1,5 +1,5 @@
 # RNGIF
-Generate a URL for a random GIF from [Imgur](imgur.com), based on the (optional) keywords.
+Generate a URL for a random GIF from [Imgur](http://imgur.com), based on the (optional) keywords.
 
 #### Requirements:
 + Python 3
